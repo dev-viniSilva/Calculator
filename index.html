@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calc</title>
+</head>
+<body>
+
+    <input type="text" placeholder="0" id="display" class="input-calc">
+
+    <div class="div-calc">
+        
+        <div class="row">
+            <button class="bt bt-white-act" onclick="addToMath('7')">7</button>
+            <button class="bt bt-white-act" onclick="addToMath('8')">8</button>
+            <button class="bt bt-white-act" onclick="addToMath('9')">9</button>
+            <button class="bt bt-delete bt-white-act" onclick="deleteMath()">DEL</button>
+        </div>
+
+        <div class="row">
+            <button class="bt bt-white-act" onclick="addToMath('4')">4</button>
+            <button class="bt bt-white-act" onclick="addToMath('5')">5</button>
+            <button class="bt bt-white-act" onclick="addToMath('6')">6</button>
+            <button class="bt bt-white-act" onclick="addToMath('+')">+</button>
+        </div>
+
+        <div class="row">
+            <button class="bt bt-white-act" onclick="addToMath('1')">1</button>
+            <button class="bt bt-white-act" onclick="addToMath('2')">2</button>
+            <button class="bt bt-white-act" onclick="addToMath('3')">3</button>
+            <button class="bt bt-white-act" onclick="addToMath('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="bt bt-white-act" onclick="addToMath('0')">0</button>
+            <button class="bt bt-white-act" onclick="deleteMath()">C</button>
+            <button class="bt bt-white-act" onclick="addToMath('/')">/</button>
+            <button class="bt bt-white-act" onclick="addToMath('*')">x</button>
+        </div>
+         <div class="row">
+            <button class="bt-last-row bt-white-act" onclick="deleteMath()">RESET</button>
+            <button class="bt-last-row-red bt-red-act" onclick="equalMath()">=</button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
